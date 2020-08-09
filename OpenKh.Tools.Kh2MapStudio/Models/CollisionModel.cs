@@ -95,7 +95,7 @@ namespace OpenKh.Tools.Kh2MapStudio.Models
 
                     foreach (var item in mesh.Items)
                     {
-                        var color = ColorPalette[item.Co5Index % ColorPalette.Length];
+                        var color = ColorPalette[item.PlaneIndex % ColorPalette.Length];
                         var v1 = coct.VertexList[item.Vertex1];
                         var v2 = coct.VertexList[item.Vertex2];
                         var v3 = coct.VertexList[item.Vertex3];
@@ -160,7 +160,7 @@ namespace OpenKh.Tools.Kh2MapStudio.Models
                 {
                     foreach (var item in mesh.Items)
                     {
-                        var color = ColorPalette[item.Co5Index % ColorPalette.Length];
+                        var color = ColorPalette[item.PlaneIndex % ColorPalette.Length];
                         var v1 = coct.VertexList[item.Vertex1];
                         var v2 = coct.VertexList[item.Vertex2];
                         var v3 = coct.VertexList[item.Vertex3];

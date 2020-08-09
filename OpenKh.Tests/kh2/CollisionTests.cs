@@ -34,9 +34,9 @@ namespace OpenKh.Tests.kh2
             Assert.Equal(25, collision.CollisionMeshGroupList[7].Meshes[0].Items[0].Vertex2);
             Assert.Equal(14, collision.CollisionMeshGroupList[7].Meshes[0].Items[0].Vertex3);
             Assert.Equal(18, collision.CollisionMeshGroupList[7].Meshes[0].Items[0].Vertex4);
-            Assert.Equal(6, collision.CollisionMeshGroupList[7].Meshes[0].Items[0].Co5Index);
-            Assert.Equal(4, collision.CollisionMeshGroupList[7].Meshes[0].Items[0].Co6Index);
-            Assert.Equal(2, collision.CollisionMeshGroupList[7].Meshes[0].Items[0].Co7Index);
+            Assert.Equal(6, collision.CollisionMeshGroupList[7].Meshes[0].Items[0].PlaneIndex);
+            Assert.Equal(4, collision.CollisionMeshGroupList[7].Meshes[0].Items[0].BoundingBoxIndex);
+            Assert.Equal(2, collision.CollisionMeshGroupList[7].Meshes[0].Items[0].SurfaceFlagsIndex);
 
             Assert.Equal(549, collision.VertexList.Count);
             Assert.Equal(233, collision.PlaneList.Count);
@@ -87,9 +87,9 @@ namespace OpenKh.Tests.kh2
                         Assert.Equal(25, collision.CollisionMeshGroupList[7].Meshes[0].Items[0].Vertex2);
                         Assert.Equal(14, collision.CollisionMeshGroupList[7].Meshes[0].Items[0].Vertex3);
                         Assert.Equal(18, collision.CollisionMeshGroupList[7].Meshes[0].Items[0].Vertex4);
-                        Assert.Equal(6, collision.CollisionMeshGroupList[7].Meshes[0].Items[0].Co5Index);
-                        Assert.Equal(4, collision.CollisionMeshGroupList[7].Meshes[0].Items[0].Co6Index);
-                        Assert.Equal(2, collision.CollisionMeshGroupList[7].Meshes[0].Items[0].Co7Index);
+                        Assert.Equal(6, collision.CollisionMeshGroupList[7].Meshes[0].Items[0].PlaneIndex);
+                        Assert.Equal(4, collision.CollisionMeshGroupList[7].Meshes[0].Items[0].BoundingBoxIndex);
+                        Assert.Equal(2, collision.CollisionMeshGroupList[7].Meshes[0].Items[0].SurfaceFlagsIndex);
 
                         Assert.Equal(549, collision.VertexList.Count);
                         Assert.Equal(233, collision.PlaneList.Count);
